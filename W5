@@ -1,0 +1,130 @@
+#Part 1
+    return x
+    def day_of_the_week(x):
+
+    if x == 6 :
+        return ("Monday")
+
+    elif x == 7 :
+        return ("Tuesday")
+
+    elif x == 1 :
+        return ("Wednesday")
+
+    elif x == 2 :
+        return ("Thursday")
+
+    elif x == 3 :
+        return ("Friday")
+
+    elif x == 4 :
+        return ("Saturday")
+
+    elif x == 5 :
+        return ("Sunday")
+
+    return x
+#Part 2
+
+def january_day(day_number):
+    answer = day_number
+    while answer > 7 :
+        answer = answer - 7
+    if answer <= 7 :
+        return day_of_the_week(answer)
+
+#Part 3
+
+def number_to_day(day_number):
+    answer = day_number
+    while answer > 7 :
+        answer = answer - 7
+    if answer <= 7 :
+        return day_of_the_week(answer)
+#Part 4 and 4.2
+
+def month_day_to_number(month_num, day_num):
+    answer = 0
+    if month_num == 1 and day_num <= 31 :
+        answer = day_num
+    elif month_num == 2 :
+        answer = day_num + 31
+    elif month_num == 3 :
+        answer = day_num + 31 + 29
+    elif month_num == 4 :
+        answer = day_num + 31 + 29 + 31
+    elif month_num == 5 :
+        answer = day_num + 31 + 29 + 31 + 30
+    elif month_num == 6 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31
+    elif month_num == 7 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31 + 30
+    elif month_num == 8 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31 + 30 + 31
+    elif month_num == 9 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31
+    elif month_num == 10 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30
+    elif month_num == 11 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31
+    elif month_num == 12 :
+        answer = day_num + 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30
+
+    return answer
+
+#Part 5
+
+def month_to_num(x) :
+
+    if x == ("January") :
+        return (1)
+
+    elif x == ("February") :
+        return (2)
+
+    elif x == ("March") :
+        return (3)
+
+    elif x == ("April") :
+        return (4)
+
+    elif x == ("May") :
+        return (5)
+
+    elif x == ("June") :
+        return (6)
+
+    elif x == ("July") :
+        return (7)
+
+    elif x == ("August") :
+        return (8)
+
+    elif x == ("September") :
+        return (9)
+
+    elif x == ("October") :
+        return (10)
+
+    elif x == ("November") :
+        return (11)
+
+    elif x == ("December") :
+        return (12)
+
+
+    return x
+#Part 6
+
+def what_day_of_the_week(z, a) :
+
+    month = month_to_num(z)
+    #answer10
+    day_yr = month_day_to_number(month, a)
+    #60
+    sub = number_to_day(day_yr)
+
+    return sub
+
+
+
