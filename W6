@@ -1,0 +1,52 @@
+#0
+list = ["hello", "world"]
+
+print (list)
+#1
+thelist = []
+
+number = input("Type some food to put on your list, don't forget olives! enter stop when you're done:")
+
+while not number == ("stop"):
+  thelist.append(number)
+  number = input("Type some food to put on your list, enter stop when you're done:")
+
+print("The final list is: ", thelist )
+#2
+thelist = []
+
+number = input("Type some food to put on your list, enter stop when you're done:")
+
+while not number == ("stop"):
+  thelist.append(number)
+  number = input("Type some food to put on your list, enter stop when you're done:")
+
+removeit = input("Your bag is too heavy! Type one thing you'd like to remove from your list")
+
+thelist.remove(removeit)
+
+
+print("The final list is: ", thelist )
+#3
+thelist = []
+
+number = input("Type some food to put on your list, enter stop when you're done:")
+
+while not number == ("stop"):
+  thelist.append(number)
+  number = input("Type some food to put on your list, enter stop when you're done:")
+
+removeit = input("Your bag is too heavy! Type one thing you'd like to remove from your list")
+
+thelist.remove(removeit)
+
+if "olives" in thelist :
+    print ("I see you remembered the olives yay!")
+elif "banana bread" in thelist :
+    removebanana = "banana bread"
+    thelist.remove(removebanana)
+    print ("Ew banana bread? No way!")
+else :
+    print ("you didn't get olives? :(" )
+
+print("The final list is: ", thelist )
