@@ -15,7 +15,7 @@ print("The final list is: ", thelist )
 #2
 thelist = []
 
-number = input("Type some food to put on your list, enter stop when you're done:")
+number = input("Type some food to put on your list, don't forget olives! enter stop when you're done:")
 
 while not number == ("stop"):
   thelist.append(number)
@@ -30,7 +30,7 @@ print("The final list is: ", thelist )
 #3
 thelist = []
 
-number = input("Type some food to put on your list, enter stop when you're done:")
+number = input("Type some food to put on your list, don't forget olives! enter stop when you're done:")
 
 while not number == ("stop"):
   thelist.append(number)
