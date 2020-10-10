@@ -95,4 +95,4 @@ if word.lower() == "stop" :
     for word in thelist:
         v = v + countVowels(word)
     print("Here's everything you put down: ",thelist)
-    print ("And the number of vowel in all that is:", v)
+    print ("And the number of vowels in all that is:", v)
