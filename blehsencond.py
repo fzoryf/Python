@@ -87,4 +87,4 @@ while space == "":
     if wall_dis(cir3):
         x3= -x3
         y3= -y3
-        print ("hitwall")
+       
